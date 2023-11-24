@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .top-frame {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 30vh; /* Adjust the height as needed */
+            background-color: #3498db; /* Example background color */
+            color: #fff; /* Example text color */
+            padding: 0 20px;
+        }
+
+        .bottom-frame {
+            display: flex;
+            height: 90vh; /* Adjust the height as needed */
+        }
+
+        .left-frame,
+        .right-frame {
+            flex: 1;
+            border: 1px solid #ccc; /* Optional: Add a border for visual separation */
+        }
+
+        .left-frame a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            background-color: #f2f2f2;
+            border-bottom: 1px solid #ccc;
+            transition: background-color 0.3s;
+        }
+
+        .left-frame a:hover {
+            background-color: #ddd;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+    <title>Your Website</title>
+</head>
+<body>
+    <div class="top-frame">
+        <div>
+            <img src="logo.png" alt="College Image">
+        </div>
+        <div>
+            <h1>Shyama Prasad Mukherjee College</h1>
+        </div>
+    </div>
+
+    <div class="bottom-frame">
+        <div class="left-frame">
+            <a href="faculty.html" target="rightFrame">Faculty</a>
+            <a href="course.html" target="rightFrame">Courses</a>
+            <a href="studentactivities.html" target="rightFrame">Student Activities</a>
+        </div>
+        <div class="right-frame">
+            <iframe name="rightFrame" src="default.html"></iframe>
+        </div>
+    </div>
+</body>
+</html>
